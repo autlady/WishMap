@@ -10,9 +10,16 @@
 		4B81C6AA28736AD500E387B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C6A928736AD500E387B6 /* AppDelegate.swift */; };
 		4B81C6AC28736AD500E387B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C6AB28736AD500E387B6 /* SceneDelegate.swift */; };
 		4B81C6AE28736AD500E387B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C6AD28736AD500E387B6 /* ViewController.swift */; };
-		4B81C6B128736AD500E387B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B81C6AF28736AD500E387B6 /* Main.storyboard */; };
 		4B81C6B328736AD500E387B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B81C6B228736AD500E387B6 /* Assets.xcassets */; };
 		4B81C6B628736AD500E387B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B81C6B428736AD500E387B6 /* LaunchScreen.storyboard */; };
+		4B81C6BE28736C5400E387B6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C6BD28736C5400E387B6 /* MainTabBarController.swift */; };
+		4B81C6C028736D6E00E387B6 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C6BF28736D6E00E387B6 /* PhotosCollectionViewController.swift */; };
+		4B81C6C22873962300E387B6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C6C12873962300E387B6 /* NetworkService.swift */; };
+		4B81C6C62874632E00E387B6 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C6C52874632E00E387B6 /* NetworkDataFetcher.swift */; };
+		4B81C6C82874639500E387B6 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C6C72874639500E387B6 /* SearchResults.swift */; };
+		4B81C6CB28748CD000E387B6 /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C6CA28748CD000E387B6 /* PhotosCell.swift */; };
+		4B81C6CE28749D0E00E387B6 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4B81C6CD28749D0E00E387B6 /* SDWebImage */; };
+		4B81C6D028749D0E00E387B6 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4B81C6CF28749D0E00E387B6 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +27,15 @@
 		4B81C6A928736AD500E387B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B81C6AB28736AD500E387B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4B81C6AD28736AD500E387B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4B81C6B028736AD500E387B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B81C6B228736AD500E387B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B81C6B528736AD500E387B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B81C6B728736AD500E387B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B81C6BD28736C5400E387B6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		4B81C6BF28736D6E00E387B6 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		4B81C6C12873962300E387B6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4B81C6C52874632E00E387B6 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		4B81C6C72874639500E387B6 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		4B81C6CA28748CD000E387B6 /* PhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B81C6D028749D0E00E387B6 /* SDWebImageMapKit in Frameworks */,
+				4B81C6CE28749D0E00E387B6 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,12 +73,49 @@
 				4B81C6A928736AD500E387B6 /* AppDelegate.swift */,
 				4B81C6AB28736AD500E387B6 /* SceneDelegate.swift */,
 				4B81C6AD28736AD500E387B6 /* ViewController.swift */,
-				4B81C6AF28736AD500E387B6 /* Main.storyboard */,
 				4B81C6B228736AD500E387B6 /* Assets.xcassets */,
 				4B81C6B428736AD500E387B6 /* LaunchScreen.storyboard */,
 				4B81C6B728736AD500E387B6 /* Info.plist */,
+				4B81C6C9287463A600E387B6 /* Models */,
+				4B81C6C4287461EA00E387B6 /* Controllers */,
+				4B81C6C328745DE800E387B6 /* Service */,
+				4B81C6D12874A62C00E387B6 /* Cells */,
 			);
 			path = WishMap;
+			sourceTree = "<group>";
+		};
+		4B81C6C328745DE800E387B6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4B81C6C12873962300E387B6 /* NetworkService.swift */,
+				4B81C6C52874632E00E387B6 /* NetworkDataFetcher.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4B81C6C4287461EA00E387B6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B81C6BD28736C5400E387B6 /* MainTabBarController.swift */,
+				4B81C6BF28736D6E00E387B6 /* PhotosCollectionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4B81C6C9287463A600E387B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B81C6C72874639500E387B6 /* SearchResults.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4B81C6D12874A62C00E387B6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4B81C6CA28748CD000E387B6 /* PhotosCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +134,10 @@
 			dependencies = (
 			);
 			name = WishMap;
+			packageProductDependencies = (
+				4B81C6CD28749D0E00E387B6 /* SDWebImage */,
+				4B81C6CF28749D0E00E387B6 /* SDWebImageMapKit */,
+			);
 			productName = WishMap;
 			productReference = 4B81C6A628736AD500E387B6 /* WishMap.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +166,9 @@
 				Base,
 			);
 			mainGroup = 4B81C69D28736AD500E387B6;
+			packageReferences = (
+				4B81C6CC28749D0E00E387B6 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 4B81C6A728736AD500E387B6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +185,6 @@
 			files = (
 				4B81C6B628736AD500E387B6 /* LaunchScreen.storyboard in Resources */,
 				4B81C6B328736AD500E387B6 /* Assets.xcassets in Resources */,
-				4B81C6B128736AD500E387B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +195,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B81C6C62874632E00E387B6 /* NetworkDataFetcher.swift in Sources */,
 				4B81C6AE28736AD500E387B6 /* ViewController.swift in Sources */,
 				4B81C6AA28736AD500E387B6 /* AppDelegate.swift in Sources */,
+				4B81C6BE28736C5400E387B6 /* MainTabBarController.swift in Sources */,
+				4B81C6C028736D6E00E387B6 /* PhotosCollectionViewController.swift in Sources */,
+				4B81C6C22873962300E387B6 /* NetworkService.swift in Sources */,
+				4B81C6C82874639500E387B6 /* SearchResults.swift in Sources */,
 				4B81C6AC28736AD500E387B6 /* SceneDelegate.swift in Sources */,
+				4B81C6CB28748CD000E387B6 /* PhotosCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4B81C6AF28736AD500E387B6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B81C6B028736AD500E387B6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4B81C6B428736AD500E387B6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +346,6 @@
 				INFOPLIST_FILE = WishMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +372,6 @@
 				INFOPLIST_FILE = WishMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +409,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B81C6CC28749D0E00E387B6 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B81C6CD28749D0E00E387B6 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B81C6CC28749D0E00E387B6 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		4B81C6CF28749D0E00E387B6 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B81C6CC28749D0E00E387B6 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4B81C69E28736AD500E387B6 /* Project object */;
 }

@@ -8,6 +8,7 @@
 * Networking
 * SDWebImage
 
+![](wishMap)
 
 ## Обратная связь
 

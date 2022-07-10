@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B81C6AA28736AD500E387B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C6A928736AD500E387B6 /* AppDelegate.swift */; };
 		4B81C6AC28736AD500E387B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C6AB28736AD500E387B6 /* SceneDelegate.swift */; };
-		4B81C6AE28736AD500E387B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C6AD28736AD500E387B6 /* ViewController.swift */; };
+		4B81C6AE28736AD500E387B6 /* WishMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C6AD28736AD500E387B6 /* WishMapViewController.swift */; };
 		4B81C6B328736AD500E387B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B81C6B228736AD500E387B6 /* Assets.xcassets */; };
 		4B81C6B628736AD500E387B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B81C6B428736AD500E387B6 /* LaunchScreen.storyboard */; };
 		4B81C6BE28736C5400E387B6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C6BD28736C5400E387B6 /* MainTabBarController.swift */; };
@@ -26,7 +26,7 @@
 		4B81C6A628736AD500E387B6 /* WishMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B81C6A928736AD500E387B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B81C6AB28736AD500E387B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4B81C6AD28736AD500E387B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B81C6AD28736AD500E387B6 /* WishMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMapViewController.swift; sourceTree = "<group>"; };
 		4B81C6B228736AD500E387B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B81C6B528736AD500E387B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B81C6B728736AD500E387B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,7 +72,6 @@
 			children = (
 				4B81C6A928736AD500E387B6 /* AppDelegate.swift */,
 				4B81C6AB28736AD500E387B6 /* SceneDelegate.swift */,
-				4B81C6AD28736AD500E387B6 /* ViewController.swift */,
 				4B81C6B228736AD500E387B6 /* Assets.xcassets */,
 				4B81C6B428736AD500E387B6 /* LaunchScreen.storyboard */,
 				4B81C6B728736AD500E387B6 /* Info.plist */,
@@ -96,6 +95,7 @@
 		4B81C6C4287461EA00E387B6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4B81C6AD28736AD500E387B6 /* WishMapViewController.swift */,
 				4B81C6BD28736C5400E387B6 /* MainTabBarController.swift */,
 				4B81C6BF28736D6E00E387B6 /* PhotosCollectionViewController.swift */,
 			);
@@ -196,7 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B81C6C62874632E00E387B6 /* NetworkDataFetcher.swift in Sources */,
-				4B81C6AE28736AD500E387B6 /* ViewController.swift in Sources */,
+				4B81C6AE28736AD500E387B6 /* WishMapViewController.swift in Sources */,
 				4B81C6AA28736AD500E387B6 /* AppDelegate.swift in Sources */,
 				4B81C6BE28736C5400E387B6 /* MainTabBarController.swift in Sources */,
 				4B81C6C028736D6E00E387B6 /* PhotosCollectionViewController.swift in Sources */,

@@ -8,7 +8,10 @@
 * Networking
 * SDWebImage
 
-![](wishMap)
+
+<img width="330" alt="1" src="https://user-images.githubusercontent.com/98653699/178164462-5e53f7e2-4f85-4481-ae12-70fd6528ac08.png">
+
+
 
 ## Обратная связь
 

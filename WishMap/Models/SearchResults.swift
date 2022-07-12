@@ -8,7 +8,7 @@
 import UIKit
 
 struct SearchResults: Decodable {
-    let total: Int
+//    let total: Int
     let results: [UnsplashPhoto]
 }
 

@@ -5,10 +5,20 @@
 //  Created by  Юлия Григорьева on 05.07.2022.
 //
 
-import Foundation
+import UIKit
 
 class NetworkService {
     func request(searchTerm: String, completion: @escaping (Data?, Error?) -> Void) {
+        let parameters = self.prepareParameters(searchTerm: searchTerm)
+        let url = self.url(params: parameters)
+        var request = URLRequest(url: url)
+        request.allHTTPHeaderFields = prepareHeader()
+        request.httpMethod = "get"
+        let task = createDataTask(from: request, completion: completion)
+        task.resume()
+    }
+
+    func randomRequest(searchTerm: String, completion: @escaping (Data?, Error?) -> Void) {
         let parameters = self.prepareParameters(searchTerm: searchTerm)
         let url = self.url(params: parameters)
         var request = URLRequest(url: url)
@@ -31,6 +41,7 @@ class NetworkService {
         return parameters
     }
 
+    
     private func url(params: [String: String]) -> URL {
         var components = URLComponents()
         components.scheme = "https"

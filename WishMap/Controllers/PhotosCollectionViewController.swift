@@ -39,13 +39,22 @@ class PhotosCollectionViewController: UICollectionViewController {
         setupNavigationBar()
         setupCollectionView()
         setupSearchBar()
-
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller does not exist")
+    }
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor(named: "Color1")
+        navBar.standardAppearance = appearance;
+        navBar.scrollEdgeAppearance = appearance
+    }
+
 
     private func updateNavButtonsState(){
         addBarButtonItem.isEnabled = numberOfSelectedPhotos > 0
         actionBarButtonItem.isEnabled = numberOfSelectedPhotos > 0
-
     }
 
     func refresh() {
@@ -58,7 +67,30 @@ class PhotosCollectionViewController: UICollectionViewController {
     //MARK: - NavigationItems action
 
     @objc private func addBarButtonTapped() {
-        
+        let selectedPhotos = collectionView.indexPathsForSelectedItems?.reduce([], { (photosss, indexPath) -> [UnsplashPhoto] in
+            var mutablePhotos = photosss
+            let photo = photos[indexPath.item]
+            mutablePhotos.append(photo)
+            return mutablePhotos
+        })
+
+        let alertController = UIAlertController(title: "", message: "\(selectedPhotos!.count) фото будут добавлены в Карту желаний", preferredStyle: .alert)
+        let add = UIAlertAction(title: "Добавить", style: .default) { (action) in
+            let tabbar = self.tabBarController as! MainTabBarController
+            let navVC = tabbar.viewControllers?[1] as! UINavigationController
+            let likesVC = navVC.topViewController as! WishMapViewController
+
+            likesVC.photos.append(contentsOf: selectedPhotos ?? [])
+            likesVC.photosCollection.reloadData()
+
+            self.refresh()
+        }
+        let cancel = UIAlertAction(title: "Отменить", style: .cancel) { (action) in
+        }
+        alertController.addAction(add)
+        alertController.addAction(cancel)
+        present(alertController, animated: true)
+
     }
 
     @objc private func actionBarButtonTapped(sender: UIBarButtonItem) {
@@ -117,8 +149,7 @@ class PhotosCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotosCell.reuseId, for: indexPath) as! PhotosCell
-        let unsplashPhoto = photos[indexPath.item]
-        cell.unsplashPhoto = unsplashPhoto
+        cell.unsplashPhoto = photos[indexPath.item]
 
         return cell
     }

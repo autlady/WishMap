@@ -8,8 +8,9 @@
 * Networking
 * SDWebImage
 
+<img width="338" alt="1" src="https://user-images.githubusercontent.com/98653699/178564862-80a3ddba-37e0-4db3-8f48-ce88c1e971c3.png">
 
-<img width="330" alt="1" src="https://user-images.githubusercontent.com/98653699/178164462-5e53f7e2-4f85-4481-ae12-70fd6528ac08.png">
+<img width="338" alt="2" src="https://user-images.githubusercontent.com/98653699/178564984-693d96b5-3795-4197-a414-b05a4daaa6fe.png">
 
 
 

@@ -18,16 +18,6 @@ class NetworkService {
         task.resume()
     }
 
-    func randomRequest(searchTerm: String, completion: @escaping (Data?, Error?) -> Void) {
-        let parameters = self.prepareParameters(searchTerm: searchTerm)
-        let url = self.url(params: parameters)
-        var request = URLRequest(url: url)
-        request.allHTTPHeaderFields = prepareHeader()
-        request.httpMethod = "get"
-        let task = createDataTask(from: request, completion: completion)
-        task.resume()
-    }
-
     private func prepareHeader() -> [String: String]? {
         var headers = [String: String]()
         headers["Authorization"] = "Client-ID 9Ve6CJPoODdCDtN8iXBM6uePfH1EAB64R7i0aRVhkgc"
@@ -41,7 +31,7 @@ class NetworkService {
         return parameters
     }
 
-    
+
     private func url(params: [String: String]) -> URL {
         var components = URLComponents()
         components.scheme = "https"

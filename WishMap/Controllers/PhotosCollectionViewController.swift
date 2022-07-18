@@ -10,6 +10,8 @@ import UIKit
 class PhotosCollectionViewController: UICollectionViewController {
 
     var networkDataFetcher = NetworkDataFetcher()
+    var networkServiceRandom = NetworkServiceRandom()
+
     private var timer: Timer?
 
     private var photos = [UnsplashPhoto]()
@@ -39,6 +41,7 @@ class PhotosCollectionViewController: UICollectionViewController {
         setupNavigationBar()
         setupCollectionView()
         setupSearchBar()
+        randomFoto()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -137,6 +140,13 @@ class PhotosCollectionViewController: UICollectionViewController {
         navigationItem.hidesSearchBarWhenScrolling = false
 
     }
+    private func randomFoto() {
+        self.networkServiceRandom.fetchRandomImages { searchRandom in
+            guard let fetchedPhotos = searchRandom else { return }
+            self.photos = fetchedPhotos
+            self.collectionView.reloadData()
+        }
+    }
 
 
     // MARK: UICollectionViewDataSource
@@ -149,9 +159,17 @@ class PhotosCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotosCell.reuseId, for: indexPath) as! PhotosCell
+
         cell.unsplashPhoto = photos[indexPath.item]
+//
+//        self.networkDataFetcher.fetchRandomImages() { [weak self] (searchResults) in
+//            guard let fetchedPhotos = searchResults else { return }
+//            self?.photos = fetchedPhotos.results
+//            self?.collectionView.reloadData()
+//        }
 
         return cell
+
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

@@ -22,6 +22,7 @@
 		4B81C6D028749D0E00E387B6 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4B81C6CF28749D0E00E387B6 /* SDWebImageMapKit */; };
 		4B81C6FE287C751E00E387B6 /* WishMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C6FD287C751E00E387B6 /* WishMapCell.swift */; };
 		4B81C707287D9D3300E387B6 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C706287D9D3300E387B6 /* ColorExtension.swift */; };
+		4B81C7412885B1CE00E387B6 /* NetworkServiceRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81C7402885B1CE00E387B6 /* NetworkServiceRandom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		4B81C6CA28748CD000E387B6 /* PhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
 		4B81C6FD287C751E00E387B6 /* WishMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMapCell.swift; sourceTree = "<group>"; };
 		4B81C706287D9D3300E387B6 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		4B81C7402885B1CE00E387B6 /* NetworkServiceRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceRandom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				4B81C6C12873962300E387B6 /* NetworkService.swift */,
+				4B81C7402885B1CE00E387B6 /* NetworkServiceRandom.swift */,
 				4B81C6C52874632E00E387B6 /* NetworkDataFetcher.swift */,
 			);
 			path = Service;
@@ -218,6 +221,7 @@
 				4B81C6C22873962300E387B6 /* NetworkService.swift in Sources */,
 				4B81C6C82874639500E387B6 /* SearchResults.swift in Sources */,
 				4B81C6AC28736AD500E387B6 /* SceneDelegate.swift in Sources */,
+				4B81C7412885B1CE00E387B6 /* NetworkServiceRandom.swift in Sources */,
 				4B81C6CB28748CD000E387B6 /* PhotosCell.swift in Sources */,
 				4B81C707287D9D3300E387B6 /* ColorExtension.swift in Sources */,
 			);
